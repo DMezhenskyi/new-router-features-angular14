@@ -1,0 +1,12 @@
+.content {
+  height: calc(100vh - 64px);
+  padding: 20px;
+  box-sizing: border-box;
+}
+.title {
+  margin-right: 20px;
+}
+.active {
+  color: white;
+  border: 1px solid white;
+}

@@ -1,0 +1,9 @@
+<h1>User List</h1>
+<p>Click on user to see details: </p>
+
+<ul class="user-list">
+  <li class="user-card" *ngFor="let user of users$ | async">
+    <div class="user-name">{{user.name}}</div>
+    <div>{{user.email}}</div>
+  </li>
+</ul>
