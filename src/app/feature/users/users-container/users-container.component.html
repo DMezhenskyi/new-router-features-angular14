@@ -4,6 +4,6 @@
 <ul class="user-list">
   <li class="user-card" *ngFor="let user of users$ | async">
     <div class="user-name">{{user.name}}</div>
-    <div>{{user.email}}</div>
+    <div>{{user.email}} - <a [routerLink]="[user.id]">More details</a> </div>
   </li>
 </ul>

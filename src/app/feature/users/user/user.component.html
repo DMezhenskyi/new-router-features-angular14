@@ -1,0 +1,17 @@
+<a mat-stroked-button class="back" routerLink="/users">Back to Users</a>
+
+<h4>User Details</h4>
+<section class="user-card" *ngIf="user$ | async as user">
+  <div class="user-card-row">
+    <span class="label">User id: </span>
+    <span class="value">{{user.id}}</span>
+  </div>
+  <div class="user-card-row">
+    <span class="label">User Name: </span>
+    <span class="value">{{user.name}}</span>
+  </div>
+  <div class="user-card-row">
+    <span class="label">User Email: </span>
+    <span class="value">{{user.email}}</span>
+  </div>
+</section>
