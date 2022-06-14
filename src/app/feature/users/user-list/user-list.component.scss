@@ -1,0 +1,19 @@
+.user-card {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: #c8d0ff 1px solid;
+  margin-bottom: 5px;
+}
+.user-list {
+  padding: 0;
+  list-style: none;
+}
+.user-name {
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+.details {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}

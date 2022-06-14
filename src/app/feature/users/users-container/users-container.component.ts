@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-import { UserLoaderService } from '../user-loader.service';
-import { User } from './users.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-users-container',
@@ -9,11 +7,13 @@ import { User } from './users.model';
   styleUrls: ['./users-container.component.scss']
 })
 export class UsersContainerComponent implements OnInit {
-  users$!: Observable<User[]>;
-  constructor(private usersLoader: UserLoaderService) { }
 
-  ngOnInit(): void {
-    this.users$ = this.usersLoader.loadUsers();
+  constructor(private router: Router) { }
+
+  ngOnInit(): void {}
+
+  onDetailsClick(userId: string | number) {
+    this.router.navigate(['users', userId])
   }
 
 }

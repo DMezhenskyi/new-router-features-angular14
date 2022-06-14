@@ -1,0 +1,6 @@
+<ul class="user-list">
+  <li class="user-card" *ngFor="let user of users$ | async">
+    <div class="user-name">{{user.name}}</div>
+    <div>{{user.email}} - <span (click)="onClick(user)" class="details">More details</span> </div>
+  </li>
+</ul>
