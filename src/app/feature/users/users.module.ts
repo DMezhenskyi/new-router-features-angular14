@@ -18,6 +18,7 @@ import { UserListComponent } from './user-list/user-list.component';
     CommonModule,
     UsersRoutingModule,
     MatButtonModule
-  ]
+  ],
+  exports: [UserListComponent]
 })
 export class UsersModule { }
