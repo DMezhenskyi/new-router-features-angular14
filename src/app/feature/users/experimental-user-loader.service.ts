@@ -8,7 +8,7 @@ import { User } from './users-container/users.model';
 export class ExperimentalUserLoaderService {
 
   constructor() { }
-  loadsUsers(): Observable<User[]> {
+  loadUsers(): Observable<User[]> {
     return of([
       { id: 0, name: 'Dummy', username: 'dummy004', email: 'dummy@dummy.com' }
     ])
