@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
+import { UserLoader } from './user-loader';
 import { User } from './users-container/users.model';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ExperimentalUserLoaderService {
+export class ExperimentalUserLoaderService implements UserLoader {
 
   constructor() { }
   loadUsers(): Observable<User[]> {
