@@ -5,15 +5,18 @@ import { HomeContainerComponent } from './feature/home/home-container/home-conta
 const routes: Routes = [
   {
     path: '',
-    component: HomeContainerComponent
+    component: HomeContainerComponent,
+    title: 'Home'
   },
   {
     path: 'users',
-    loadChildren: () => import('./feature/users/users.module').then(m => m.UsersModule)
+    loadChildren: () => import('./feature/users/users.module').then(m => m.UsersModule),
+    title: 'Users'
   },
   {
     path: 'admin',
-    loadComponent: () => import('./feature/admin/admin.component').then(c => c.AdminComponent)
+    loadComponent: () => import('./feature/admin/admin.component').then(c => c.AdminComponent),
+    title: 'Admin'
   }
 ];
 
